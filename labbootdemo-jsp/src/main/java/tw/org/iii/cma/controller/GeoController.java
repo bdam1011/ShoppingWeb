@@ -19,7 +19,7 @@ import com.google.maps.model.RankBy;
 @RestController
 @RequestMapping("/foodmaps")
 public class GeoController {
-	@GetMapping(path = "/map/{querys}")
+	@GetMapping(path = "/map/{query}")
 	public ResponseEntity<?> getDetail(@Value("${gmaps.api.key}") String apiKey, 
 										@PathVariable String query) {
 		GeoApiContext geoApiContext = new GeoApiContext.Builder()
