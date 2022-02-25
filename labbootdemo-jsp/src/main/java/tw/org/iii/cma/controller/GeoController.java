@@ -17,7 +17,7 @@ import com.google.maps.model.PlacesSearchResponse;
 import com.google.maps.model.RankBy;
 
 @RestController
-@RequestMapping("/foodmap")
+@RequestMapping("/foodmaps")
 public class GeoController {
 	@GetMapping(path = "/map/{querys}")
 	public ResponseEntity<?> getDetail(@Value("${gmaps.api.key}") String apiKey, 
